@@ -1,0 +1,28 @@
+{
+  "setupTasks": [
+    {
+      "name": "Install dependencies",
+      "command": "npm ci"
+    }
+  ],
+  "tasks": {
+    "dev": {
+      "name": "Development server",
+      "command": "npm run start",
+      "runAtStart": true,
+      "preview": {
+        "port": 5173
+      }
+    },
+    "build": {
+      "name": "Production build",
+      "command": "npm run build",
+      "runAtStart": false
+    },
+    "test": {
+      "name": "Tests",
+      "command": "npm test",
+      "runAtStart": false
+    }
+  }
+}
